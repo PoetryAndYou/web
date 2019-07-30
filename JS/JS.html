@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        td{
+            border: solid 1px;
+        }
+    </style>
+</head>
+<body>
+<script>
+    document.write("<table  align='center'>")
+    var i = 1;
+    for (i; i <= 9; i++) {
+        document.write("<tr >")
+        for (var j = 1; j <= i; j++) {
+            document.write("<td >")
+            document.write(i + "*" + j + "=" + i * j + "&nbsp;&nbsp;&nbsp;");
+            document.write("</td>")
+        }
+        document.write("</tr>")
+    }
+    document.write("</table>")
+</script>
+</body>
+</html>
