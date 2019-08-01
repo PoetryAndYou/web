@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    div{
+        border: red solid 1px;
+
+    }
+#div1{
+    width: 200px;
+    height: 200px;
+}
+    #div2{
+        width: 100px;
+        height: 100px;
+    }
+    #div4{
+        width: 100px;
+        height: 100px;
+    }
+
+
+</style>
+<body>
+<div id="div1">div1
+    <div id="div2">div2</div>
+</div>
+<br>
+<br>
+
+<br>
+<a id="delete" href="javascript:void(0);"> 删除子节点</a>
+<a id="add" href="javascript:void(0);"> 添加子节点</a>
+<script>
+    var byId = document.getElementById("delete");
+    byId.onclick = function () {
+        var byId1 = document.getElementById("div1");
+        var byId2 = document.getElementById("div2");
+        byId1.removeChild(byId2);
+    }
+    /**
+     *
+     超链接功能:
+     1.可以被点击:样式
+     2.点击后跳转到href指定的url
+     需求:保留1功能，去掉2功能
+     实现: href="javascript:void(0);"
+     */
+    var byId_add = document.getElementById("add");
+    byId_add.onclick = function () {
+        var byId1 = document.getElementById("div1");
+        var div3= document.createElement("div");
+        div3.setAttribute("id","div4")
+        byId1.appendChild(div3);
+    }
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+body {
+    background: url("01335_aloneagainstthestorm_1920x1080.jpg") no-repeat center;
+    width: auto;
+    height: auto;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+.section {
+    opacity: 0.8;
+    height: 500px;
+    width: 900px;
+    background-color: white;
+    border: gainsboro 5px solid;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.re_left > p:first-child {
+
+    color: gold;
+    font-size: 20px;
+}
+
+.re_left > p:last-child {
+    color: red;
+    font-size: 20px;
+}
+
+.re_left {
+    float: left;
+    height: 100%;
+    margin: 15px;
+}
+
+.re_mid {
+    float: left;
+    height: 100%;
+    margin: 10px 50px;
+    width: 450px;
+    line-height: 40px;
+    text-align: left;
+
+}
+
+
+.re_right > p:first-child {
+    font-size: 20px;
+}
+
+.re_right p a {
+    color: red;
+}
+
+
+.re_right {
+    padding-left: 50px;
+
+
+}
+
+.rg_form {
+
+}
+
+#username, #password, #email, #birthday, #tel, #name {
+    width: 250px;
+    height: 32px;
+    border: gainsboro 2px solid;
+    border-radius: 5px;
+    padding-left: 10px;
+
+}
+
+#img_check {
+    height: 32px;
+    vertical-align: middle;
+}
+
+#checkcode {
+    height: 32px;
+    border: gainsboro 2px solid;
+}
+
+#btn_sub {
+    margin-top: 10px;
+
+    border: 1px solid gold;
+    height: 32px;
+    width: 100px;
+    background-color: gold;
+}
+
+.re_mid .rg_form .td_right {
+    padding-left: 25px;
+}

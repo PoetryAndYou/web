@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="刷新页面" id="bt">
+<input type="button" value="百度" id="goout">
+</body>
+<script>
+    var id = document.getElementById("bt");
+    id.onclick = function () {
+        location.reload();
+    }
+    //获取 href
+    var href=location.href;
+    alert(href)
+    var id = document.getElementById("goout");
+    id.onclick = function () {
+        location.href="https://www.baidu.com"
+    }
+
+</script>
+</html>

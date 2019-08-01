@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件</title>
+</head>
+<body>
+<a id="aa">zhehsi</a>
+<select>
+    <optgroup label="徐阿虐"></optgroup>
+    <option>请选择</option>
+    <option>背景</option>
+    <option>撒</option>
+</select>
+<br>
+<form action="#" onclick="return oncheck();" id="as">
+    <input type="text" name="username">
+    <input type="submit" value="提交表单" id="sub"/>
+</form>
+
+</body>
+<script>
+    var a = document.getElementById("aa");
+    a.ondblclick = function () {
+        alert("双击")
+    }
+    /*    a.onclick=function () {
+            alert("单击")
+        }*/
+    /*    document.onmousedown=function () {
+            alert("鼠标按下")
+        }*/
+    /*    onmousemove=function () {
+            alert("移动")
+        }*/
+    /*    a.onmouseover=funct on () {
+            alert("谁让你放上面的")
+        }*/
+/*    var sub = document.getElementById("as").onsubmit = function () {
+        var flag = false;
+        return flag;
+    }*/
+       function oncheck() {
+            return false;
+        }
+</script>
+</html>

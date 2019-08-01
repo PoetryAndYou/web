@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="开启" name="bt" id="bt">
+<input type="button" value="关闭" name="bt2" id="bt2">
+<script>
+    // var flag = window.confirm("确定删除！");
+    // alert(flag);
+    // var a= prompt("请输入用户名");
+    // alert(a);
+    // var as = document.getElementById("bt");
+    // var newWindows;
+    // as.onclick = function () {
+    //     newWindows = open("https://www.baidu.com");//打开一个新窗口
+    // }
+    // var as1 = document.getElementById("bt2");
+    // as1.onclick = function () {
+    //     newWindows.close();//关闭
+    // }
+    var a = setInterval(fun, 2000)
+
+    function fun() {
+        alert("boom")
+    }
+    clearInterval(a);
+</script>
+</body>
+</html>

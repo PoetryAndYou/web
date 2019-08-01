@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .over{
+            background-color: aqua;
+        }
+        .out{
+            background-color: white;
+        }
+        table {
+            border: 1px solid;
+            margin: auto;
+            width: 500px;
+        }
+
+        td, th {
+            text-align: center;
+            border: 1px solid;
+        }
+
+        div {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+<table id="table">
+    <caption>学生信息表</caption>
+    <tr>
+        <th><input type="checkbox" name="checkbox" id="first_cb"></th>
+        <th>编号</th>
+        <th>姓名</th>
+        <th>性别</th>
+        <th>操作</th>
+    </tr>
+
+    <tr>
+        <td><input type="checkbox" name="checkbox"></td>
+        <td>1</td>
+        <td>令狐冲</td>
+        <td>男</td>
+        <td><a href="javascript:void(0);" onclick="delTr(this);">删除</a></td>
+    </tr>
+
+    <tr>
+        <td><input type="checkbox" name="checkbox"></td>
+        <td>2</td>
+        <td>任我行</td>
+        <td>男</td>
+        <td><a href="javascript:void(0);" onclick="delTr(this);">删除</a></td>
+    </tr>
+
+    <tr>
+        <td><input type="checkbox" name="checkbox"></td>
+        <td>3</td>
+        <td>岳不群</td>
+        <td>?</td>
+        <td><a href="javascript:void(0);" onclick="delTr(this);">删除</a></td>
+    </tr>
+</table>
+<div>
+    <input type="button" id="all" value="全选">
+    <input type="button" id="allno" value="全不选">
+    <input type="button" id="unall" value="反选">
+</div>
+<script>
+    window.onload = function () {
+        //全选
+        var a = document.getElementsByName("checkbox");
+        document.getElementById("all").onclick = function () {
+            for (var i = 0; i < a.length; i++) {
+                a[i].checked = true;
+            }
+        }
+        //全不选
+        document.getElementById("allno").onclick = function () {
+            for (var i = 0; i < a.length; i++) {
+                a[i].checked = false;
+            }
+        }
+        document.getElementById("unall").onclick = function () {
+            for (var i = 0; i < a.length; i++) {
+                if (a[i].checked) {
+                    a[i].checked = false;
+                } else {
+                    a[i].checked = true;
+                }
+            }
+        }
+        document.getElementById("first_cb").onclick = function () {
+            for (var i = 0; i < a.length; i++) {
+                a[i].checked = this.checked
+            }
+        }
+        //鼠标在上显示
+
+        var trs = document.getElementsByTagName("tr");
+            for (var i=0;i<trs.length;i++){
+                trs[i].onmouseover=function () {
+                    this.className="over";
+                }
+                trs[i].onmouseout=function () {
+                    this.className="out";
+                }
+            }
+
+    }
+</script>
+</body>
+</html>

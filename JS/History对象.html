@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" id="bt" value="获取历史记录个数">
+<a href="电灯开关案例.html">电灯开关</a>
+<input type="button" id="bt2" value="前进">
+<script>
+    var id = document.getElementById("bt");
+    id.onclick = function () {
+        var num = history.length;
+        alert(num);
+    }
+    //前进
+    var id2 = document.getElementById("bt2");
+    id2.onclick = function () {
+        history.back();
+    }
+
+
+</script>
+
+
+</body>
+
+</html>
